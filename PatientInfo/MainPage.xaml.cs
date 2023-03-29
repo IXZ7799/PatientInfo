@@ -1,6 +1,6 @@
 ﻿namespace PatientInfo;
 
-public partial class MainPage : ContentPage
+public partial class MainPage : TabbedPage
 {
     public MainPage()
     {
@@ -12,7 +12,7 @@ public partial class MainPage : ContentPage
 
     }
 
-    private async void btnSubmit_Clicked(Object sender, EventArgs e)
+    private async void btnSubmit_Clicked(object sender, EventArgs e)
     {
         if (string.IsNullOrEmpty(txtName.Text))
         {
